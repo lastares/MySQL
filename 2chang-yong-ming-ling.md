@@ -1,3 +1,5 @@
+##### 
+
 ##### 1.显示数据库
 
 ```
@@ -16,6 +18,12 @@ eg: create database blog
 ```
 use 数据库名
 eg： use blog
+```
+
+4.直接删除数据库不提醒
+
+```
+drop database name
 ```
 
 
