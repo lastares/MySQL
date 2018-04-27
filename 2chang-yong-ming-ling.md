@@ -26,5 +26,11 @@ eg： use blog
 drop database name
 ```
 
+5.修改root用户密码
+
+```
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('newpass');
+```
+
 
 
