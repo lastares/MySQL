@@ -28,8 +28,19 @@ drop database name
 
 5.修改root用户密码
 
+方法1：
+
 ```
 SET PASSWORD FOR 'root'@'localhost' = PASSWORD('newpass');
+```
+
+方法2
+
+```
+mysql -u root
+mysql> use mysql;
+mysql> UPDATE user SET Password = PASSWORD('newpass') WHERE user = 'root';
+mysql> FLUSH PRIVILEGES;
 ```
 
 
