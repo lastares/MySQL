@@ -1,4 +1,4 @@
-1.管理员表
+#### 1.管理员表
 
 ```sql
 create table admin
@@ -10,7 +10,7 @@ create table admin
 )engine=InnoDB default charset=utf8 comment '管理员';
 ```
 
-2.角色表
+#### 2.角色表
 
 ```sql
 create table p39_role
@@ -21,7 +21,7 @@ create table p39_role
 )engine=InnoDB default charset=utf8 comment '角色';
 ```
 
-3.权限表
+#### 3.权限表
 
 ```sql
 create table privilege
@@ -36,7 +36,7 @@ create table privilege
 )engine=InnoDB default charset=utf8 comment '权限';
 ```
 
-1.管理员角色表
+#### 4.管理员角色表
 
 ```sql
 create table admin_role
@@ -48,7 +48,7 @@ create table admin_role
 )engine=InnoDB default charset=utf8 comment '管理员角色';
 ```
 
-2.权限角色表
+#### 5.权限角色表
 
 ```sql
 create table p39_role_pri
@@ -58,7 +58,6 @@ create table p39_role_pri
     key pri_id(pri_id),
     key role_id(role_id)
 )engine=InnoDB default charset=utf8 comment '角色权限';
-
 ```
 
 
