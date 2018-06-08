@@ -7,6 +7,6 @@
 * 4.数据库设计
   * [4.1 无限极评论](41-wu-xian-ji-ping-lun.md)
   * [4.2 RBAC（一）](42-rbac.md)
-  * 4.3 RBAC（二）
+  * [4.3 RBAC（二）](43-rbacff08-er-ff09.md)
   * 4.4 无限极分类
 
