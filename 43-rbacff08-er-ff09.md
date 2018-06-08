@@ -17,7 +17,7 @@ CREATE TABLE `kqc_admin` (
   `is_leader` tinyint(3) NOT NULL DEFAULT '0' COMMENT '0 不是leader  1 是',
   `subordinate` varchar(32) NOT NULL DEFAULT '' COMMENT '下属用户组的id(英文 , 号分割)    如：1,5,7',
   `dept_id` int(10) NOT NULL DEFAULT '0' COMMENT '部门id，关联部门表',
-  `position_id` smallint(5) NOT NULL DEFAULT '0' COMMENT '职位id',
+  `position_id` smallint(5) NOT NULL DEFAULT '0' COMMENT '职位id，关联职位表',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
