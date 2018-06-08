@@ -1,4 +1,4 @@
-#### 1.管理员表
+1.管理员表
 
 ```sql
 CREATE TABLE `kqc_admin` (
