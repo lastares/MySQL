@@ -39,24 +39,25 @@ CREATE TABLE `access_menu` (
 
 3.菜单表
 
-    CREATE TABLE `menu` (
-      `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
-      `module` varchar(20) DEFAULT NULL COMMENT '模块名,可不填',
-      `class` varchar(20) NOT NULL COMMENT '控制器名',
-      `action` varchar(20) NOT NULL COMMENT '方法名',
-      `name` varchar(20) NOT NULL COMMENT '菜单名字',
-      `display` tinyint(3) unsigned NOT NULL COMMENT '1为显示为菜单，0则不显示',
-      `pid` smallint(5) unsigned NOT NULL COMMENT '节点的父节点，此值一般用于输出树形结构，0则为顶级',
-      `sort` smallint(5) unsigned NOT NULL COMMENT '排序',
-      `level` tinyint(3) unsigned NOT NULL COMMENT '第几级菜单',
-      `mark` varchar(32) NOT NULL DEFAULT '' COMMENT '菜单备注',
-      `created_at` int(10) NOT NULL COMMENT '创建时间',
-      `updated_at` int(10) NOT NULL COMMENT '更新时间',
-      `deleted_at` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '删除时间',
-      `route_url` varchar(127) NOT NULL COMMENT '路由地址',
-      PRIMARY KEY (`id`)
-    ) ENGINE=InnoDB AUTO_INCREMENT=1343 DEFAULT CHARSET=utf8 COMMENT='功能节点表';
-
+```sql
+CREATE TABLE `menu` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `module` varchar(20) DEFAULT NULL COMMENT '模块名,可不填',
+  `class` varchar(20) NOT NULL COMMENT '控制器名',
+  `action` varchar(20) NOT NULL COMMENT '方法名',
+  `name` varchar(20) NOT NULL COMMENT '菜单名字',
+  `display` tinyint(3) unsigned NOT NULL COMMENT '1为显示为菜单，0则不显示',
+  `pid` smallint(5) unsigned NOT NULL COMMENT '节点的父节点，此值一般用于输出树形结构，0则为顶级',
+  `sort` smallint(5) unsigned NOT NULL COMMENT '排序',
+  `level` tinyint(3) unsigned NOT NULL COMMENT '第几级菜单',
+  `mark` varchar(32) NOT NULL DEFAULT '' COMMENT '菜单备注',
+  `created_at` int(10) NOT NULL COMMENT '创建时间',
+  `updated_at` int(10) NOT NULL COMMENT '更新时间',
+  `deleted_at` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '删除时间',
+  `route_url` varchar(127) NOT NULL COMMENT '路由地址',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1343 DEFAULT CHARSET=utf8 COMMENT='功能节点表';
+```
 
 
 
