@@ -1,4 +1,4 @@
-1.管理员表
+#### 1.管理员表
 
 ```sql
 CREATE TABLE `kqc_admin` (
@@ -59,7 +59,7 @@ CREATE TABLE `menu` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1343 DEFAULT CHARSET=utf8 COMMENT='功能节点表';
 ```
 
-4.角色表
+#### 4.角色表
 
 ```sql
 CREATE TABLE `roles` (
