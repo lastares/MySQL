@@ -1,4 +1,4 @@
-1.管理员表
+#### 1.管理员表
 
 ```sql
 CREATE TABLE `kqc_admin` (
@@ -22,10 +22,10 @@ CREATE TABLE `kqc_admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
 
-2.权限菜单表
+#### 2.角色菜单表
 
 ```sql
-CREATE TABLE `kqc_access` (
+CREATE TABLE `access_menu` (
   `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
   `role_id` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT '角色(ID)',
   `menu_id` smallint(5) unsigned NOT NULL COMMENT '菜单ID',
