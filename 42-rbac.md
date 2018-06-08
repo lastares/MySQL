@@ -13,7 +13,7 @@ create table admin
 #### 2.角色表
 
 ```sql
-create table p39_role
+create table role
 (
     id mediumint unsigned not null auto_increment comment 'Id',
     role_name varchar(30) not null comment '角色名称',
@@ -51,7 +51,7 @@ create table admin_role
 #### 5.权限角色表
 
 ```sql
-create table p39_role_pri
+create table role_pri
 (
     pri_id mediumint unsigned not null comment '权限id',
     role_id mediumint unsigned not null comment '角色id',
