@@ -59,5 +59,20 @@ CREATE TABLE `menu` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1343 DEFAULT CHARSET=utf8 COMMENT='功能节点表';
 ```
 
+4.角色表
+
+```sql
+CREATE TABLE `roles` (
+  `id` tinyint(3) unsigned NOT NULL AUTO_INCREMENT,
+  `role_name` varchar(20) NOT NULL COMMENT '角色名',
+  `level` tinyint(4) NOT NULL COMMENT '角色等级，低等级的不能对高等级的用户做修改',
+  `status` tinyint(4) NOT NULL COMMENT '状态：1可用  0 禁用 ',
+  `created_at` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
+  `updated_at` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '更新时间',
+  `deleted_at` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '删除时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
 
 
