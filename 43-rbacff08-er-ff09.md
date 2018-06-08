@@ -37,7 +37,7 @@ CREATE TABLE `access_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
 
-3.菜单表
+#### 3.菜单表
 
 ```sql
 CREATE TABLE `menu` (
